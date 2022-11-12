@@ -23,42 +23,36 @@
     <header class="header">
       <div class="container main-nav">
         <nav class="header-nav">
-          <a class="header-logo link logo-flex" href="./"
-            >Web<span class="header-logo-last">Studio</span></a
-          >
+          <a class="header-logo link logo-flex" href="./">Web<span class="header-logo-last">Studio</span></a>
           <ul class="header-list list">
             <li class="header-list-item">
-              <a class="header-list-link header-link link" href="./studio.html">Студія</a>
-            </li>
-            <li class="header-list-item">
-              <a class="header-list-link header-link link active-link" href="./portfolio.html"
-                >Портфоліо</a
+              <a class="header-list-link link active-link" href="./studio.html"
+                >Студія</a
               >
             </li>
             <li class="header-list-item">
-              <a class="header-list-link header-link link" href="#">Контакти</a>
+              <a class="header-list-link link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="header-list-item">
+              <a class="header-list-link link" href="#">Контакти</a>
             </li>
           </ul>
         </nav>
-        <ul class="mail-tel-nav list">
-          <li class="item">
-            <a class="header-mail-link header-link link" href="mailto:info@devstudio.com">
-              <svg class="svg-mail" width="16" height="12">
-                <use href="./images/icons.svg#h-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="item">
-            <a class="header-tel-link header-link link" href="tel:+380961111111">
-              <svg class="svg-tel" width="10" height="16">
-                <use href="./images/icons.svg#h-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </div>
+            <ul class="mail-tel-nav list">
+            <li class="item">
+              <a class="header-mail-link link" href="mailto:info@devstudio.com">
+                <svg class="svg-mail" width="16" height="12">
+                  <use href="./images/icons.svg#h-envelope"></use>
+                </svg>info@devstudio.com</a>
+            </li>
+            <li class="item">
+              <a class="header-tel-link link" href="tel:+380961111111">
+                <svg class="svg-tel" width="10" height="16">
+                  <use href="./images/icons.svg#h-smartphone"></use>
+                </svg>+38 096 111 11 11</a>
+            </li>
+            </ul>
+        </div>
     </header>
     <main>
       <section class="portfolio">
@@ -84,7 +78,10 @@
           <ul class="portfolio-container list">
             <li class="portfolio-container-item">
               <a class="portfolio-link link" href="">
-                <img class="portfolio-img" src="./images/proj01.jpg" alt="Photo note" />
+                <div class="portfolio-img-wrapper">
+                  <img class="portfolio-img" src="./images/proj01.jpg" alt="Photo note" />
+                  <div class="portfolio-img-description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
+                </div>
                 <div class="portfolio-sign">
                   <h2 class="portfolio-project">Технокряк</h2>
                   <p class="portfolio-filtr-name">Веб-сайт</p>
@@ -93,7 +90,10 @@
             </li>
             <li class="portfolio-container-item">
               <a class="portfolio-link link" href="">
-                <img class="portfolio-img" src="./images/proj02.jpg" alt="Photo basketball" />
+                <div class="portfolio-img-wrapper">
+                  <img class="portfolio-img" src="./images/proj02.jpg" alt="Photo note" />
+                  <div class="portfolio-img-description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
+                </div>
                 <div class="portfolio-sign">
                   <h2 class="portfolio-project">Постер New Orlean vs Golden Star</h2>
                   <p class="portfolio-filtr-name">Дизайн</p>
@@ -102,7 +102,10 @@
             </li>
             <li class="portfolio-container-item">
               <a class="portfolio-link link" href="">
-                <img class="portfolio-img" src="./images/proj03.jpg" alt="Photo seafood" />
+                <div class="portfolio-img-wrapper">
+                  <img class="portfolio-img" src="./images/proj03.jpg" alt="Photo note" />
+                  <div class="portfolio-img-description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
+                </div>
                 <div class="portfolio-sign">
                   <h2 class="portfolio-project">Ресторан Seafood</h2>
                   <p class="portfolio-filtr-name">Додаток</p>
@@ -111,7 +114,10 @@
             </li>
             <li class="portfolio-container-item">
               <a class="portfolio-link link" href="">
-                <img class="portfolio-img" src="./images/proj04.jpg" alt="Photo earphone" />
+                <div class="portfolio-img-wrapper">
+                  <img class="portfolio-img" src="./images/proj04.jpg" alt="Photo note" />
+                  <div class="portfolio-img-description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
+                </div>
                 <div class="portfolio-sign">
                   <h2 class="portfolio-project">Проєкт Prime</h2>
                   <p class="portfolio-filtr-name">Маркетинг</p>
@@ -120,7 +126,10 @@
             </li>
             <li class="portfolio-container-item">
               <a class="portfolio-link link" href="">
-                <img class="portfolio-img" src="./images/proj05.jpg" alt="Photo boxes" />
+                <div class="portfolio-img-wrapper">
+                  <img class="portfolio-img" src="./images/proj05.jpg" alt="Photo note" />
+                  <div class="portfolio-img-description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
+                </div>
                 <div class="portfolio-sign">
                   <h2 class="portfolio-project">Проєкт Boxes</h2>
                   <p class="portfolio-filtr-name">Додаток</p>
@@ -129,7 +138,10 @@
             </li>
             <li class="portfolio-container-item">
               <a class="portfolio-link link" href="">
-                <img class="portfolio-img" src="./images/proj06.jpg" alt="Photo monitor" />
+                <div class="portfolio-img-wrapper">
+                  <img class="portfolio-img" src="./images/proj06.jpg" alt="Photo note" />
+                  <div class="portfolio-img-description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
+                </div>
                 <div class="portfolio-sign">
                   <h2 class="portfolio-project">Inspiration has no Borders</h2>
                   <p class="portfolio-filtr-name">Веб-сайт</p>
@@ -138,7 +150,10 @@
             </li>
             <li class="portfolio-container-item">
               <a class="portfolio-link link" href="">
-                <img class="portfolio-img" src="./images/proj07.jpg" alt="Photo book" />
+                <div class="portfolio-img-wrapper">
+                  <img class="portfolio-img" src="./images/proj07.jpg" alt="Photo note" />
+                  <div class="portfolio-img-description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
+                </div>
                 <div class="portfolio-sign">
                   <h2 class="portfolio-project">Видання Limited Edition</h2>
                   <p class="portfolio-filtr-name">Дизайн</p>
@@ -147,7 +162,10 @@
             </li>
             <li class="portfolio-container-item">
               <a class="portfolio-link link" href="">
-                <img class="portfolio-img" src="./images/proj08.jpg" alt="Photo label" />
+                <div class="portfolio-img-wrapper">
+                  <img class="portfolio-img" src="./images/proj08.jpg" alt="Photo note" />
+                  <div class="portfolio-img-description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
+                </div>
                 <div class="portfolio-sign">
                   <h2 class="portfolio-project">Проєкт LAB</h2>
                   <p class="portfolio-filtr-name">Маркетинг</p>
@@ -156,7 +174,10 @@
             </li>
             <li class="portfolio-container-item">
               <a class="portfolio-link link" href="">
-                <img class="portfolio-img" src="./images/proj09.jpg" alt="Photo notebook" />
+                <div class="portfolio-img-wrapper">
+                  <img class="portfolio-img" src="./images/proj09.jpg" alt="Photo note" />
+                  <div class="portfolio-img-description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
+                </div>
                 <div class="portfolio-sign">
                   <h2 class="portfolio-project">Growing Business</h2>
                   <p class="portfolio-filtr-name">Додаток</p>

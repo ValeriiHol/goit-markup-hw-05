@@ -114,7 +114,7 @@ ul {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   /* background-color: tomato; */
 }
@@ -149,7 +149,7 @@ ul {
   opacity: 0;
   transition-property: opacity;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-list-link:hover:after {
   opacity: 1;
@@ -178,7 +178,7 @@ ul {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-mail-link {
@@ -190,7 +190,7 @@ ul {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .svg-mail {
@@ -249,9 +249,8 @@ ul {
   border: none;
   padding: 10px 32px;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
-  /* Width 216px Height 50px  СЂР°Р·РјРµСЂ РєРЅРѕРїРєРё РІ РјР°РєРµС‚Рµ*/
-}
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 .hero-button:hover,
 .hero-button:active {
   background-color: var(--button-bkg-mouse); 
@@ -342,9 +341,27 @@ ul {
 .works-flex-item {
   width: 370px;
   margin-right: 30px;
+  position: relative;
 }
 .works-flex-item:nth-child(3n) {
   margin-right: 0;
+}
+.works-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  color: var(--hero-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0px;
+  background-color: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  bottom: 0;
 }
 /* team styles */
 
@@ -433,7 +450,7 @@ ul {
   background-color: #ffff;
   border-radius: 50%;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-cards-item .social-link:hover {
   background-color: var(--social-fon-active);
@@ -484,7 +501,7 @@ ul {
   height: 92px;
   color: var(--clients-border);
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover {
@@ -534,7 +551,7 @@ ul {
   letter-spacing: 0.03em;
   color: var(--footer-color-list-adress);
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-list-mail {
   font-style: normal;
@@ -544,7 +561,7 @@ ul {
   letter-spacing: 0.03em;
   color: var(--footer-color-list-mail-tel);
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-list-tel {
   font-style: normal;
@@ -554,7 +571,7 @@ ul {
   letter-spacing: 0.03em;
   color: var(--footer-color-list-mail-tel);
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-list-adress:hover,
 .footer-list-adress:active,
@@ -598,7 +615,7 @@ ul {
   background-color: var(--foot-line);
   border-radius: 50%;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .foot-social-net .social-link:hover {
@@ -635,6 +652,8 @@ ul {
   cursor: pointer;
   border: none;
   border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-menu:not(:last-child) {
   margin-right: 8px;
@@ -670,6 +689,34 @@ ul {
 .portfolio-link {
   display: block;
 }
+.portfolio-container .portfolio-img-wrapper {
+  /* portfolio-container-item */
+  /* portfolio-link */
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-img-description {
+  background-color: rgba(33, 150, 243, 0.9);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--hero-color);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  padding: 20px;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+}
+.portfolio-container .portfolio-container-item:hover  .portfolio-img-description {
+  transform: translateY(0);  
+}
+
 .portfolio-link:hover {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
