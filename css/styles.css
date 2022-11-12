@@ -108,11 +108,14 @@ ul {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  color: var(--title-text-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  position: relative;
   /* background-color: tomato; */
 }
 
@@ -133,6 +136,27 @@ ul {
   color: var(--accent-color);
 }
 
+.header-list-link::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 5px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+.header-list-link:hover:after {
+  opacity: 1;
+}
+.active-link::after {
+  opacity: 1;
+}
 .mail-tel-nav {
   display: flex;
   margin-left: auto;
@@ -147,31 +171,30 @@ ul {
 
 .header-tel-link {
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
 }
 
 .header-mail-link {
   display: flex;
-  /* text-align: center; */
   align-items: center;
-  /* justify-content: center; */
   font-size: 14px;
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
 }
 
 .svg-mail {
   fill: currentColor;
-  width: 16px;
-  height: 11px;
   margin-right: 10px;
 }
 /* .svg-mail:hover {
@@ -225,12 +248,13 @@ ul {
   border-radius: 4px;
   border: none;
   padding: 10px 32px;
-
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
   /* Width 216px Height 50px  СЂР°Р·РјРµСЂ РєРЅРѕРїРєРё РІ РјР°РєРµС‚Рµ*/
 }
 .hero-button:hover,
 .hero-button:active {
-  background-color: var(--button-bkg-mouse);
+  background-color: var(--button-bkg-mouse); 
   cursor: pointer;
 }
 
@@ -402,12 +426,14 @@ ul {
 .team-cards-item .social-link {
   width: 100%;
   height: 100%;
-  display: inline-block;
+  /* display: inline-block; */
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #ffff;
   border-radius: 50%;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
 }
 .team-cards-item .social-link:hover {
   background-color: var(--social-fon-active);
@@ -457,6 +483,8 @@ ul {
   border-radius: 4px;
   height: 92px;
   color: var(--clients-border);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
 }
 
 .clients-link:hover {
@@ -505,6 +533,8 @@ ul {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--footer-color-list-adress);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
 }
 .footer-list-mail {
   font-style: normal;
@@ -513,6 +543,8 @@ ul {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--footer-color-list-mail-tel);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
 }
 .footer-list-tel {
   font-style: normal;
@@ -521,6 +553,8 @@ ul {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--footer-color-list-mail-tel);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
 }
 .footer-list-adress:hover,
 .footer-list-adress:active,
@@ -563,6 +597,8 @@ ul {
   justify-content: center;
   background-color: var(--foot-line);
   border-radius: 50%;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
 }
 
 .foot-social-net .social-link:hover {
