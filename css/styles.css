@@ -352,6 +352,11 @@ ul {
 .works-flex-item:nth-child(3n) {
   margin-right: 0;
 }
+.works-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 .works-description {
   display: flex;
   justify-content: center;
@@ -369,8 +374,8 @@ ul {
   position: absolute;
   bottom: 0;
 }
-/* team styles */
 
+/* team styles */
 .team {
   margin-top: 0;
   margin-bottom: 0;
